@@ -1,1 +1,31 @@
 <!-- Vista del formulario de inserción de un viaje -->
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insertar usuario</title>
+
+</head>
+
+<body>
+	
+	<h1>Cabecera - Añadir Viaje</h1>
+	<form action="/viaje-add" method="post">
+		<label>Ruta <input name="ruta" type="text" required></label> <br>
+		<label>Plazas ofertadas <input name="plazasOfertadas" type="number" required></label> <br>
+		<label>Propietario <input name="propietario" type="text" required></label> <br>
+		<label>Precio <input name="precio" type="number" required></label> <br>
+		<label>Duración <input name="duracion" type="number" required></label> <br>
+		<label>Fecha Salida <input name="fechaSalida" type="date" required></label> <br>
+		<label>Hora Salida <input name="horaSalida" type="time" required></label> <br>
+		<input type="submit" value="Añadir" required>
+
+
+	</form>
+	<form action="">
+		<button type="submit">Reset</button>
+	</form>
+	<p><a href='/viajes'>Cancelar(Volver al listado)</a></p>
+</body>
+
+</html>
